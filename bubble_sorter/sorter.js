@@ -26,7 +26,7 @@ function macaroni() {
         k++;
     }
 
-    console.log(arr);
+    alert("Отсортированный массив:\n" + arr);
 };
 
 butt.onclick = macaroni;

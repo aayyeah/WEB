@@ -31,9 +31,6 @@
     /* text-shadow:0px 1px 0px #2f6627; */
     box-shadow: 0px 1px 0px gray;
 }
-.my_button:hover {
-    
-}
 .my_button:active {
 	position:relative;
     top:1px;
