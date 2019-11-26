@@ -1,0 +1,54 @@
+header{
+    margin: 200px;
+    font-family: "Poiret One",cursive;
+}
+.dws-menu *{
+    margin: 0;
+    padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+    list-style: none;
+}
+.dws-menu > ul{
+    display: flex;
+    justify-content: center;
+}
+.dws-menu > ul li a{
+    display: block;
+    background-size: 10px;
+    padding: 15px 30px 15px 40px;
+    font-size: 20px;
+    color: #252525;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.dws-menu > ul li{
+    position: relative;
+}
+.dws-menu li a:hover{
+    background-color: lightgray;
+    color: white;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+/*SubMenu*/
+.dws-menu li ul{
+    position: relative;
+    width: 100%;
+    display: none;
+}
+.dws-menu li > ul li{
+    border-bottom: 1px solid gainsboro;
+}
+.dws-menu li > ul li a{
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-transform: none;
+}
+.dws-menu li:hover > ul{
+    display: block;
+    
+}

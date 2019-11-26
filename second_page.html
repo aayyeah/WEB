@@ -1,0 +1,79 @@
+
+<head> </head>
+
+<body>
+
+<style>
+    .circle{
+        background: blueviolet;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .inactive-circle{
+        background: brown;
+    }
+
+    .active-circle{
+
+    }
+    
+</style>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+</body>
+<script>
+
+    let block = document.getElementById("yolo");
+        block.textContent="Hello";
+        block.classList.add("red-text");
+        let counter = 20;
+        let h = setInterval(function () {
+            if (counter-- >0){
+                if (block.classList.contains("green-text")){
+                    block.classList.remove("green-text");
+                }else {
+                    block.classList.add("green-text");
+                }
+
+            }else clearInterval(h);
+        },300);
+
+        let dlock = document.getElementsByClassName("circle");
+        dlock.onclick = function(){
+            //dlock.backgroundColor("red");
+            dlock.backgroundColor = "red";
+        };
+
+    block.onclick = function () {
+        block.textContent = "You lol";
+    };
+
+    function Animal(name,message) {
+        this.name = name;
+        this.say = () => message;
+    };
+
+    let cat = new Animal("Frosya", "meow");
+    cat.name; // frosya
+    cat.say(); // meow
+    cat.say = () => "mao";
+    let dog = new Animal("Sharik", "woof");
+    dog.say(); // woof
+
+    Animal.prototype.jump = () => "jump";
+    cat.jump();
+
+    function Human(name){
+        return {name:name, say:()=>"Hello"};
+    }
+
+    Human("Carl");
+
+
+
+</script>
