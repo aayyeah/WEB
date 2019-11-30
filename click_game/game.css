@@ -1,0 +1,33 @@
+.field{
+    margin-top: 6em;
+}
+.row{
+    margin: 40px;
+    justify-content: center;
+    display: flex;
+}
+.circle{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* background-color: blue; */
+    /* background-color: gainsboro; */
+    background-color: aliceblue;
+    /* background-color: lightgray; */
+    transition-duration: 1s;
+}
+.white{
+    width: 80px;
+    height: 80px;
+    margin: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: indianred;
+    transition-duration: 1s;
+}
+.text{
+    font-family:"Poiret One", cursive;
+	font-size:30px;
+}
